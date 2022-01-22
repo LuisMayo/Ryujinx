@@ -27,7 +27,7 @@ namespace Ryujinx.HLE.HOS.Services.Sockets.Sfdnsres.Types
 
         public void ToNetworkOrder()
         {
-            Port = IPAddress.HostToNetworkOrder(Port);
+            // Port = IPAddress.HostToNetworkOrder(Port);
 
             RawIpv4AddressNetworkEndianSwap(ref Address);
         }
